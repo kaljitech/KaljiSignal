@@ -24,3 +24,19 @@
 
 ## 🛠️ System Architecture
 
+
+
+---
+
+## 🚀 Terminal Deployment
+
+### 1. Provision Infrastructure Dependencies
+Before bootstrapping the daemon, your mobile terminal environment must be updated and granted operational system hardware hooks.
+
+```bash
+# Sync local package indexes and download system dependencies
+pkg update && pkg upgrade -y
+pkg install python termux-api -y
+
+# Elevate environment permissions to access local disk storage
+termux-setup-storage
