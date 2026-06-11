@@ -24,7 +24,10 @@
 
 ## 🛠️ System Architecture
 
-
+[ Localized RF Beacons ] ───> ( Android API Interface Layer )
+│
+▼
+[ Hardware GPS Core ] ────> [ KaljiSignal Engine Daemon ] ───> [ Encrypted SQLite/CSV Log ]
 
 ---
 
